@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Taxi Booking",
+    "description": "A taxi booking made by a customer",
+    "type": "object",
+    "properties": {
+        "BookingID" :
+        {
+            "description": "Booking id",
+            "type" : "integer"
+        },
+        "PartySize" :
+        {
+            "description": "Størrelsen på folket",
+            "type" : "integer"
+        },
+        "PickupLocation" :
+        {
+            "description": "Pick up spot",
+            "type" : "string"
+        },
+        "PickupTime" :
+        {
+            "description": "Time of pick up",
+            "type" : "datetime"
+        }
+    },
+    "required": ["BookingID", "PartySize", "PickupLocation", "PickupTime"]
+   }
+   
